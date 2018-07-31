@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Pro-tect Fire Door Services',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
