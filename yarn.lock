@@ -5063,7 +5063,7 @@ gatsby-link@^2.0.0-beta.19:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
-gatsby-plugin-netlify-cms@^3.0.0-beta.4:
+gatsby-plugin-netlify-cms@next:
   version "3.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-3.0.0-beta.4.tgz#339748042e8638d992ba91fea8c39d39f2ba8bfc"
   dependencies:
@@ -5075,7 +5075,7 @@ gatsby-plugin-netlify-cms@^3.0.0-beta.4:
     netlify-identity-widget "^1.4.11"
     webpack "^4.16.0"
 
-gatsby-plugin-netlify@^2.0.0-beta.6:
+gatsby-plugin-netlify@next:
   version "2.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.0.0-beta.6.tgz#e446e95b9f29bbf8d707a957ff0ae7410afa47ce"
   dependencies:
@@ -5098,20 +5098,20 @@ gatsby-plugin-page-creator@^2.0.0-beta.5:
     parse-filepath "^1.0.1"
     slash "^1.0.0"
 
-gatsby-plugin-react-helmet@^3.0.0-beta.4:
+gatsby-plugin-react-helmet@next:
   version "3.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.0.0-beta.4.tgz#065bb67fec37e86db536c51d7a5006eee2ce89b9"
   dependencies:
     "@babel/runtime" "7.0.0-beta.52"
 
-gatsby-plugin-sass@^2.0.0-beta.10:
+gatsby-plugin-sass@next:
   version "2.0.0-beta.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.0.0-beta.10.tgz#d5fe13aa77a4befd12edafb6a13ab953ad972d2d"
   dependencies:
     "@babel/runtime" "7.0.0-beta.52"
     sass-loader "^7.0.1"
 
-gatsby-plugin-sharp@^2.0.0-beta.7:
+gatsby-plugin-sharp@next:
   version "2.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.0.0-beta.7.tgz#3a185451ccde6c8a0badff82e449b42da162b6ad"
   dependencies:
@@ -5130,13 +5130,11 @@ gatsby-plugin-sharp@^2.0.0-beta.7:
     sharp "^0.20.2"
     svgo "^0.7.2"
 
-gatsby-plugin-typography@^1.7.19:
-  version "1.7.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-1.7.19.tgz#64a7bbb49d1ed4456dbe6b45f25a891f06a63b6d"
+gatsby-plugin-typography@next:
+  version "2.2.0-beta.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-2.2.0-beta.3.tgz#61d641faca00499fcda5348a6ec0de3f77febed1"
   dependencies:
-    babel-runtime "^6.26.0"
-    react-typography "^0.16.1"
-    typography "^0.16.0"
+    "@babel/runtime" "7.0.0-beta.52"
 
 gatsby-react-router-scroll@^2.0.0-beta.8:
   version "2.0.0-beta.8"
@@ -5146,7 +5144,7 @@ gatsby-react-router-scroll@^2.0.0-beta.8:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-remark-images@^2.0.1-beta.10:
+gatsby-remark-images@next:
   version "2.0.1-beta.10"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-2.0.1-beta.10.tgz#3e9af9e25cf3a5cbfbde29bb30da44361475ba17"
   dependencies:
@@ -5158,7 +5156,7 @@ gatsby-remark-images@^2.0.1-beta.10:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.0.1"
 
-gatsby-source-filesystem@^2.0.1-beta.10:
+gatsby-source-filesystem@next:
   version "2.0.1-beta.10"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.1-beta.10.tgz#f357ac909bc97aea2a99e8cca9d6bd31da8bdc2b"
   dependencies:
@@ -5175,7 +5173,7 @@ gatsby-source-filesystem@^2.0.1-beta.10:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-transformer-remark@^2.1.1-beta.6:
+gatsby-transformer-remark@next:
   version "2.1.1-beta.6"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.1-beta.6.tgz#1b4e1fce943d849f6fc44b9fc665c396ecaa9846"
   dependencies:
@@ -5199,7 +5197,7 @@ gatsby-transformer-remark@^2.1.1-beta.6:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.3.0"
 
-gatsby-transformer-sharp@^2.1.1-beta.6:
+gatsby-transformer-sharp@next:
   version "2.1.1-beta.6"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.1-beta.6.tgz#011800ac19c646e6e2527c3cc0fde45ac4bb748a"
   dependencies:
@@ -5208,7 +5206,7 @@ gatsby-transformer-sharp@^2.1.1-beta.6:
     fs-extra "^4.0.2"
     probe-image-size "^4.0.0"
 
-gatsby@^2.0.0-beta.93:
+gatsby@next:
   version "2.0.0-beta.93"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.93.tgz#12ed33e3cb0652b2dbc158a199fb26b7319740af"
   dependencies:
@@ -10068,7 +10066,7 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.0, react-transition-g
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-typography@^0.16.1, react-typography@^0.16.13:
+react-typography@^0.16.13:
   version "0.16.13"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.13.tgz#94bdd2a9448823bc74d8ebf7465d86c7dbe20dcf"
 
@@ -12049,7 +12047,7 @@ typography-theme-irving@^0.15.10:
     gray-percentage "^2.0.0"
     typography-breakpoint-constants "^0.15.10"
 
-typography@^0.16.0, typography@^0.16.17:
+typography@^0.16.17:
   version "0.16.17"
   resolved "https://registry.yarnpkg.com/typography/-/typography-0.16.17.tgz#e166eda9b533d51c115e2b38becdb5cedd0a30e4"
   dependencies:

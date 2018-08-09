@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
+  "name": "pro-tect-fire",
+  "description": "Pro-Text Fire Door Services",
+  "version": "0.0.1",
+  "author": "John Clark",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-regular-svg-icons": "^5.1.0-11",
@@ -22,6 +22,8 @@
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-sharp": "next",
+    "gatsby-plugin-typography": "next",
+    "gatsby-image": "next",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^1.9.3",
