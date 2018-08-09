@@ -12,7 +12,7 @@ library.add(faFire)
 
 export default ({data}) => (
     <StaticQuery
-      query={graphql`query {
+      query={graphql`query banner {
         bannerImage: file(relativePath: { eq: "2500x700.png" }) {
           childImageSharp {
             # Specify the image processing specifications right in the query.

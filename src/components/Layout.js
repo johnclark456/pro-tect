@@ -6,8 +6,7 @@ import './all.sass'
 import './bootstrap.css';
 import './post-bootstrap.sass'
 
-
-export default ({ children }) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Pro-tect Fire Door Services" />
     <Navbar />
@@ -15,3 +14,4 @@ export default ({ children }) => (
   </div>
 )
 
+export default TemplateWrapper
