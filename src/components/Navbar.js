@@ -4,10 +4,9 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
-  NavItem,
-  NavLink } from 'reactstrap';
+  NavItem } from 'reactstrap';
+import { Link } from 'gatsby';
 
 
 export default class Example extends React.Component {
@@ -28,16 +27,16 @@ export default class Example extends React.Component {
     return (
       <div>
         {/* Expand means when does it convert to the toggle element */}
-        <Navbar color="light" light expand="md" fixed="top"> 
-          <NavbarBrand href="/">Pro-Tect Ltd</NavbarBrand>
+        <Navbar color="dark" dark expand="md" fixed="top"> 
+          <Link to='/' className='navbar-brand'>Pro-Tect Ltd</Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="btn-lg" href="/about/">About Us</NavLink>
+                <Link className="btn-lg nav-link" to='/about/'>About Us</Link>
               </NavItem>
               <NavItem>
-                <Button color="danger" size="lg">Contact Us</Button>
+                <Link to='/contact-us/'><Button color="danger" size="lg">Contact Us</Button></Link>
               </NavItem>
             </Nav>
           </Collapse>
