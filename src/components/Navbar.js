@@ -8,8 +8,9 @@ import {
   NavItem } from 'reactstrap';
 import { Link } from 'gatsby';
 
+import './all.sass'
 
-export default class Example extends React.Component {
+export default class ProtectNavbar extends React.Component {
   constructor(props) {
     super(props);
 
