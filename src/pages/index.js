@@ -30,11 +30,19 @@ export default ({data}) => (
               <Img className="full-width-image-container  margin-top-0" fluid={data.bannerImage.childImageSharp.fluid} />
               <h1 className="centered-on-image has-text-weight-bold is-size-1 text-white margin-top-0">Fire Doors Save Lives</h1>
             </div>
+
+            <div className="floating-wrapper">
+              <div className="floating-box">
+                Pro-Tect Ltd provide a full and comprehensive fire door surveying service for all new and existing fire door installations.<br/>
+                Our aim is to provide customers with the knowledge that the environment in which they work, is as safe from the spread of fire.
+              </div>
+            </div>
+
             <div className="row">
-              <div className="col">
+              <div className="col-md-6">
                 <h1 className="text-center display-1"><FontAwesomeIcon icon="fire"/></h1>
               </div>
-              <div className="col">
+              <div className="col-md-6">
                 <h1 className="text-center display-1"><FontAwesomeIcon icon={['far', 'clipboard']}/></h1>
               </div>
             </div>
