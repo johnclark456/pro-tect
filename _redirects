@@ -3,3 +3,6 @@ http://stupefied-euclid-6e70e7.netlify.com/* http://pro-tectltd.co.uk/:splat 301
 
 http://email.pro-tectltd.co.uk/* http://email.secureserver.net/:splat 200!
 https://email.pro-tectltd.co.uk/* https://email.secureserver.net/:splat 200!
+
+
+https://pro-tectltd.co.uk/email https://email.secureserver.net/ 200!
