@@ -28,7 +28,9 @@ export default ({data}) => (
           <div className="fluid-container">
             <div className="content" style={{position:'relative'}}>
               <Img className="full-width-image-container  margin-top-0" fluid={data.bannerImage.childImageSharp.fluid} />
-              <h1 className="centered-on-image has-text-weight-bold is-size-1 text-white margin-top-0">Fire Doors Save Lives</h1>
+              <h1 className="centered-on-image has-text-weight-bold is-size-1 text-white margin-top-0">
+                <span style={{textShadow: '2px 2px 4px #000000'}}>Fire Doors Save Lives</span>
+              </h1>
             </div>
 
             <div className="floating-wrapper">
