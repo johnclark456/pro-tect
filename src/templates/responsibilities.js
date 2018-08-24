@@ -2,15 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import AboutPageTemplate from '../components/AboutPageTemplate'
+import ResponsibilitiesPageTemplate from '../components/ResponsibilitiesPageTemplate'
 import { HTMLContent } from '../components/Content'
 
-const AboutPage = ({ data }) => {
+const ResponsibilitiesPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <ResponsibilitiesPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -19,14 +19,14 @@ const AboutPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+ResponsibilitiesPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default ResponsibilitiesPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const ResponsibilitiesPageQuery = graphql`
+  query ResponsibilitiesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
