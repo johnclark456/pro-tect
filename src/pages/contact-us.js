@@ -42,6 +42,7 @@ export default class Contact extends React.Component {
   };
 
   render() {
+    const { name, email, message } = this.state;
     return (
       <Layout>
         <Container>
@@ -60,19 +61,19 @@ export default class Contact extends React.Component {
                 <label for="name">
                 Your name
                 </label>
-                <input type="text" name="name" className="form-control" onChange={this.handleChange} />
+                <input type="text" name="name" className="form-control"  value={name} onChange={this.handleChange} />
             </div>
             <div className="form-group">
                 <label for="email">
                 Your email
                 </label>
-                <input type="email" name="email" className="form-control" onChange={this.handleChange} />
+                <input type="email" name="email" className="form-control"  value={email} onChange={this.handleChange} />
             </div>
             <div className="form-group">
                 <label for="message">
                 Message
                 </label>
-                <textarea name="message" className="form-control" onChange={this.handleChange} />
+                <textarea name="message" className="form-control"  value={message} onChange={this.handleChange} />
             </div>
             <Recaptcha
                 ref="recaptcha"
