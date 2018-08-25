@@ -1,5 +1,5 @@
 import React from "react";
-import { navigateTo } from "gatsby-link";
+import { navigate } from "gatsby-link";
 import Recaptcha from "react-google-recaptcha";
 import Layout from '../components/Layout';
 import {Container} from 'reactstrap';
@@ -15,7 +15,7 @@ function encode(data) {
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { name: "", email: "", message: "" };
   }
 
   handleChange = e => {
@@ -37,7 +37,7 @@ export default class Contact extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   };
 
@@ -58,19 +58,19 @@ export default class Contact extends React.Component {
                 <p>This form won’t work with Javascript disabled</p>
             </noscript>
             <div className="form-group">
-                <label for="name">
+                <label htmlFor="name">
                 Your name
                 </label>
                 <input type="text" name="name" className="form-control"  value={name} onChange={this.handleChange} />
             </div>
             <div className="form-group">
-                <label for="email">
+                <label htmlFor="email">
                 Your email
                 </label>
                 <input type="email" name="email" className="form-control"  value={email} onChange={this.handleChange} />
             </div>
             <div className="form-group">
-                <label for="message">
+                <label htmlFor="message">
                 Message
                 </label>
                 <textarea name="message" className="form-control"  value={message} onChange={this.handleChange} />
