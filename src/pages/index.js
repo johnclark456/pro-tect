@@ -36,7 +36,7 @@ export default ({data}) => (
       render={data => (<Layout>
         <section className="section">
           <Container fluid>
-            <div className="content" style={{position:'relative', marginTop:'-50px'}}>
+            <div className="content" style={{position:'relative', marginTop:'-55px'}}>
               <Img className="full-width-image-container  margin-top-0" fluid={data.bannerImage.childImageSharp.fluid} />
               <h1 className="centered-on-image has-text-weight-bold is-size-1 text-white margin-top-0">
                 <span style={{textShadow: '2px 2px 4px #000000'}}>Fire Doors Save Lives</span>
@@ -51,7 +51,7 @@ export default ({data}) => (
             </div>
 
             <Row style={{position:"relative", top:-100}}>
-              <Col>
+              <Col md="6">
                 <Card body>
                   <CardTitle className="text-center">
                     <FontAwesomeIcon className="display-1" icon="fire"/>
