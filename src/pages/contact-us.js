@@ -57,7 +57,7 @@ export default class Contact extends React.Component {
                         <FormGroup row>
                             <Label for="name" sm={2}>Name</Label>
                             <Col sm={10}>
-                                <Input type="email" name="name" id="name" />
+                                <Input type="text" name="name" id="name" />
                             </Col>
                         </FormGroup>
                         <FormGroup row>
