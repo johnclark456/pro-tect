@@ -51,12 +51,13 @@ export default class Contact extends React.Component {
             method="POST"
             action="/thanks/"
             data-netlify="true"
-            data-netlify-recaptcha="true"
+            netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
             >
             <noscript>
                 <p>This form won’t work with Javascript disabled</p>
             </noscript>
+            <input hidden className="hidden" name="bot-field" />
             <div className="form-group">
                 <label htmlFor="name">
                 Your name
@@ -75,11 +76,12 @@ export default class Contact extends React.Component {
                 </label>
                 <textarea name="message" className="form-control"  value={message} onChange={this.handleChange} />
             </div>
-            <Recaptcha
+            <div data-netlify-recaptcha />
+            {/* <Recaptcha
                 ref="recaptcha"
                 sitekey={RECAPTCHA_KEY}
                 onChange={this.handleRecaptcha}
-            />
+            /> */}
             <button type="submit"  className="btn btn-primary">Send</button>
             </form>
         </Container>
