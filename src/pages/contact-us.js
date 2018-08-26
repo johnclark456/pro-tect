@@ -48,7 +48,7 @@ export default class Contact extends React.Component {
         <Container>
             <form
             name="contact-recaptcha"
-            method="post"
+            method="POST"
             action="/thanks/"
             data-netlify="true"
             data-netlify-recaptcha="true"
