@@ -1,6 +1,8 @@
 import React from "react";
-import { navigateTo } from "gatsby-link";
+import { navigate } from "gatsby-link";
 import Recaptcha from "react-google-recaptcha";
+import Layout from '../components/Layout';
+import {Container} from 'reactstrap';
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
@@ -35,26 +37,26 @@ export default class Contact extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   };
 
   render() {
     return (
-      <div>
-        <h1>reCAPTCHA 2</h1>
-        <form
-          name="contact-recaptcha-new"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          <noscript>
-            <p>This form won’t work with Javascript disabled</p>
-          </noscript>
+      <Layout>
+        <Container>
+            <form
+            name="contact-recaptcha"
+            method="post"
+            action="/thanks/"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+            >
+            <noscript>
+                <p>This form won’t work with Javascript disabled</p>
+            </noscript>
           <input type="hidden" name="form-name" value="contact-recaptcha-new" />
           <p hidden>
             <label>
@@ -62,34 +64,33 @@ export default class Contact extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          <p>
-            <label>
-              Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <Recaptcha
-            ref="recaptcha"
-            sitekey={RECAPTCHA_KEY}
-            onChange={this.handleRecaptcha}
-          />
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
+            <div className="form-group">
+                <label htmlFor="name">
+                Your name
+                </label>
+                <input type="text" name="name" className="form-control" onChange={this.handleChange} />
+            </div>
+            <div className="form-group">
+                <label htmlFor="email">
+                Your email
+                </label>
+                <input type="email" name="email" className="form-control" onChange={this.handleChange} />
+            </div>
+            <div className="form-group">
+                <label htmlFor="message">
+                Message
+                </label>
+                <textarea name="message" className="form-control" onChange={this.handleChange} />
+            </div>
+            <Recaptcha
+                ref="recaptcha"
+                sitekey={RECAPTCHA_KEY}
+                onChange={this.handleRecaptcha}
+            />
+            <button type="submit"  className="btn btn-primary">Send</button>
+            </form>
+        </Container>
+      </Layout>
     );
   }
 }
