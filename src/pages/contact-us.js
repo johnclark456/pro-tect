@@ -46,7 +46,7 @@ export default class Contact extends React.Component {
       <Layout>
         <Container>
             <form
-            name="contact-recaptcha"
+            name="contact-us"
             method="post"
             action="/thanks/"
             data-netlify="true"
@@ -57,7 +57,7 @@ export default class Contact extends React.Component {
             <noscript>
                 <p>This form won’t work with Javascript disabled</p>
             </noscript>
-          <input type="hidden" name="form-name" value="contact-recaptcha-new" />
+          <input type="hidden" name="form-name" value="contact-us" />
           <p hidden>
             <label>
               Don’t fill this out:{" "}
