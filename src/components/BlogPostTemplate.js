@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
+// import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import Content from './Content'
 
@@ -14,7 +14,6 @@ const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
   return (
     <section className="section">
       {helmet || ''}
@@ -50,7 +49,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+  helmet: PropTypes.object//PropTypes.instanceOf(Helmet),
 }
 
 export default BlogPostTemplate

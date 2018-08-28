@@ -29,6 +29,7 @@ BlogPost.propTypes = {
   }),
 }
 
+
 export default BlogPost
 
 export const pageQuery = graphql`
@@ -37,7 +38,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "Do MMMM YYYY")
         title
         description
         tags
