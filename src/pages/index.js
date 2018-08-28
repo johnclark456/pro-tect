@@ -53,7 +53,7 @@ export default ({ data }) => (
                 title
                 thumbnail {
                   childImageSharp {
-                    fixed(width: 400) {
+                    fixed(width: 400, height:400) {
                       ...GatsbyImageSharpFixed
                     }
                   }
