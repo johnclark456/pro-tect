@@ -53,7 +53,7 @@ export default ({ data }) => (
                 title
                 thumbnail {
                   childImageSharp {
-                    fixed(width: 400, height:400) {
+                    fixed(height:400) {
                       ...GatsbyImageSharpFixed
                     }
                   }
@@ -99,8 +99,8 @@ export default ({ data }) => (
           </Container>
 
 
-          <Container>
-            <Row style={{ position: "relative", top: -100 }}>
+          <Container style={{ position: "relative", top: -100 }}>
+            <Row>
               <Col md="6">
                 <Card body>
                   <CardTitle className="text-center">
@@ -132,6 +132,8 @@ export default ({ data }) => (
               </Col>
             </Row>
             <Row />
+            <hr className="fancy-line"/>
+            <h1 className="text-center">News</h1>
             {data.blogPages.edges.map(edge => {
               const fullPath = edge.node.fileAbsolutePath
               const data = {
