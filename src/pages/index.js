@@ -46,6 +46,16 @@ export default ({ data }) => (
           }
         }
 
+        safe: allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/pages/keeping-it-safe/.*.md$/"}}
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 500)
+            }
+          }
+        } 
+
         blogPages: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fileAbsolutePath: {regex: "/blog/.*.md$/"}}) {
           edges {
             node {
@@ -128,8 +138,12 @@ export default ({ data }) => (
                     />
                     <br />
                     <br />
-                    What does the law say?
+                    Keeping it safe
                   </CardTitle>
+                  <CardText>{data.safe.edges[0].node.excerpt}</CardText>
+                  <Link to="/keeping-it-safe" className="text-center">
+                    <Button color="danger">Read more</Button>
+                  </Link>
                 </Card>
               </Col>
             </Row>

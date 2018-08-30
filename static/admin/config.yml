@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: src/pages/blog
-public_folder: ''
+media_folder: src/pages
+public_folder: '../'
 
 collections:
   - name: "responsibilities"
@@ -50,6 +50,30 @@ collections:
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/certification/index.md"
+        label: "Certification"
+        name: "certification"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/keeping-it-safe/index.md"
+        label: "Keeping it Safe"
+        name: "keeping-it-safe"
         fields:
           - {
               label: "Template Key",
