@@ -7,19 +7,26 @@ import { Button, Card, CardBody, CardText, Row, Col } from "reactstrap";
 const NewsPreviews = ({ article }) => (
   <Row>
     <Col>
-      <Card className="m-2 p-1 d-flex flex-row">
+      <Card className="m-2 p-1">
+      <Row noGutters>
+        <Col md="auto">
           <Img
             title={article.title}
             alt={article.title}
             fixed={article.imageSizes}
             className="card-img_src center-block"
+            style={{maxWidth:'100%', overflow:'hidden'}}
           />
-        <CardBody>
-          <CardText>{article.description}</CardText>
-          <Link to={article.link}>
-            <Button>Read More</Button>
-          </Link>
-        </CardBody>
+        </Col>
+        <Col>
+          <CardBody>
+            <CardText>{article.description}</CardText>
+            <Link to={article.link}>
+              <Button>Read More</Button>
+            </Link>
+          </CardBody>
+        </Col>
+        </Row>
       </Card>
     </Col>
   </Row>

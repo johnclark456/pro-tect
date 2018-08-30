@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link, StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library, config } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
@@ -16,6 +16,8 @@ import {
   Col
 } from "reactstrap";
 import NewsPreviews from "../components/newsPreviews";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false
 
 library.add(faClipboard);
 library.add(faFire);
@@ -104,7 +106,7 @@ export default ({ data }) => (
               <Col md="6">
                 <Card body>
                   <CardTitle className="text-center">
-                    <FontAwesomeIcon className="display-1" icon="fire" />
+                    <FontAwesomeIcon className="fa-5x" icon="fire" />
                     <br />
                     <br />
                     What are your responsiblities?
@@ -121,7 +123,7 @@ export default ({ data }) => (
                 <Card body>
                   <CardTitle className="text-center">
                     <FontAwesomeIcon
-                      className="display-1"
+                      className="fa-5x"
                       icon={["far", "clipboard"]}
                     />
                     <br />
