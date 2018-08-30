@@ -1,6 +1,5 @@
 ---
-templateKey: 'about-page'
-path: /keeping-it-safe
+templateKey: about-page
 title: Keeping it Safe
 ---
 ##### For years, weak and fragmented legislation, combined with poor skills and control in construction and maintenance have undermined installation and failed to address inadequacies in inspection and maintenance regimes. We believe that there is a very deep-rooted problem and that many fire doors would struggle to halt the spread of major fire.
@@ -9,10 +8,10 @@ Through the Fire Door Scheme (BWF Certifire), Fire Door Inspection Scheme (FDIS)
 
 The fire door is a system of components that all must be tested and work together to prevent failure. Getting just one small detail wrong can have an enormous impact. We regularly see fire doors that have been compromised by the use of uncertificated, incompatible and non-fire-resistant components, poor fitting and inadequate maintenance, and of course if a fire door is wedged open it’s no use whatsoever. It is vital the door is installed by competent people and there is full traceability of the products so that those who hold legal and moral responsibility for managing fire safety can ensure specification is not broken, and the doors can be managed properly to remain safe throughout their life span.
 
-
 ##### What happens if you the installation is wrong or poorly maintained?
 
 Manufacturing, installing or maintaining fire doors incorrectly results in 5 main Risks:
+
 * Danger for users of the building and possible loss of life
 * Danger for emergency services responding to a fire
 * You could be prosecuted with a fine or imprisonment
@@ -28,7 +27,11 @@ Fire doors act as a barrier to a fire, cutting off and protecting parts of a bui
 * Provide the emergency services with a protected route to access the building
 * Protect users of a building who may have difficulty
 
-
 ##### Where should fire doors be fitted?
 
-Fire Doors are required in almost every building built in the UK according to the relevant national fire safety regulations. Requirement, rating and location of fire doors is different for different types of buildings and is based on: – Guidance in the relevant building regulations. – The overall fire risk assessment* and plan (including escape routes). *if applicable. It should be noted that beyond regulation specification also drives requirement and insurance companies often place specific fire door requirements on projects.
+Fire Doors are required in almost every building built in the UK according to the relevant national fire safety regulations. Requirement, rating and location of fire doors is different for different types of buildings and is based on:
+
+* Guidance in the relevant building regulations.
+* The overall fire risk assessment (if applicable) and plan, including escape routes.
+
+It should be noted that beyond regulation specification also drives requirement and insurance companies often place specific fire door requirements on projects.
