@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Pro-tect Fire Door Services',
+    siteUrl: 'https://www.pro-tectltd.co.uk'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -49,6 +50,9 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
     'gatsby-plugin-netlify-cache',

@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0-rc.0",
     "gatsby-plugin-sass": "^2.0.0-rc.0",
     "gatsby-plugin-sharp": "^2.0.0-rc.0",
+    "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-typography": "^2.2.0-rc.0",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-remark-relative-images": "^0.1.2",
