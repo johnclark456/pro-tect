@@ -50,7 +50,7 @@ export default class ProtectNavbar extends React.Component {
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
-                <NavItem>
+                  <NavItem>
                     <Link className="btn-lg nav-link" to="/keeping-it-safe">
                       <h6>Fire Door Safety</h6>
                     </Link>
