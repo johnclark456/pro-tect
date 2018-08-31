@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import './bootstrap.css';
 import './post-bootstrap.sass'
+import 'typeface-exo';
+import 'typeface-yrsa';
 
 const TemplateWrapper = ({ children }) => (
   <div>
