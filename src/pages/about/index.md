@@ -14,6 +14,3 @@ Ut laoreet libero ac felis luctus tempor ac non urna. Sed eget sagittis purus. N
 
 Fusce facilisis faucibus elit, et accumsan ligula. Nunc molestie convallis eros, vel faucibus arcu aliquam sed. Suspendisse tempor ut arcu non sollicitudin. Quisque consectetur quam nec rutrum finibus. Suspendisse sit amet vestibulum dui. Vivamus sit amet congue leo. Etiam sed sollicitudin lectus, vel tincidunt nunc. Duis nec mollis mi, vitae ornare urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum nec dui semper efficitur.
 
-
-
-![](../images/fdis.jpg)

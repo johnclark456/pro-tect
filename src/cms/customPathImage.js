@@ -7,8 +7,10 @@ export class CustomPathImageControl extends React.Component {
     super(props);
 
     this.imageWidget = null;
-    this.customMediaPath = this.props.field.get("customMediaPath");
-    this.rawMediaPath = this.props.field.get("rawMediaPath");
+    // this.customMediaPath = this.props.field.get("customMediaPath");
+    // this.rawMediaPath = this.props.field.get("rawMediaPath");
+    this.customMediaPath = "../images/";
+    this.rawMediaPath = "https://raw.githubusercontent.com/johnclark456/pro-tect/master/src/pages/images/";
 
     this.getAbsoluteValue = this.getAbsoluteValue.bind(this);
     this.getRawValue = this.getRawValue.bind(this);
@@ -28,8 +30,8 @@ export class CustomPathImageControl extends React.Component {
     return false;
   }
 
-  componentWillReceiveProps(nextProps) {
-    const { mediaPaths, value, onRemoveInsertedMedia, onChange } = nextProps;
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    const { mediaPaths, value, onChange } = nextProps;
     const mediaPath = mediaPaths.get(this.imageWidget.controlID);
     if (mediaPath && this.customMediaPath) {
       const pathArray = mediaPath.split('/');
@@ -90,7 +92,7 @@ export class CustomPathImageControl extends React.Component {
   }
 
   render() {
-    const ImageWidget = CMS.getWidget("image").control;
+    const ImageWidget = CMS.getWidget("defaultImageWidget").control;
     const {mediaPaths, value, getAsset, ...others} = this.props;
     const absoluteValue = this.getAbsoluteValue();
     const absoluteMediaPaths = this.getAbsoluteMediaPaths();
@@ -111,8 +113,10 @@ export class CustomPathImagePreview extends React.Component {
   constructor(props) {
     super(props);
 
-    this.customMediaPath = this.props.field.get("customMediaPath");
-    this.rawMediaPath = this.props.field.get("rawMediaPath");
+    // this.customMediaPath = this.props.field.get("customMediaPath");
+    // this.rawMediaPath = this.props.field.get("rawMediaPath");
+    this.customMediaPath = "../images/";
+    this.rawMediaPath = "https://raw.githubusercontent.com/johnclark456/pro-tect/master/src/pages/images/";
 
     this.getRawValue = this.getRawValue.bind(this);
   }
@@ -136,7 +140,7 @@ export class CustomPathImagePreview extends React.Component {
   }
 
   render() {
-    const ImagePreview = CMS.getWidget("image").preview;
+    const ImagePreview = CMS.getWidget("defaultImageWidget").preview;
     const { value, ...others } = this.props;
     const rawValue = this.getRawValue();
 
