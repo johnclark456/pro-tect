@@ -29,7 +29,10 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - { label: "Thumbnail", name: "thumbnail", 
+          widget: "custompathimage",
+        customMediaPath: "../images/",
+        rawMediaPath: "https://raw.githubusercontent.com/johnclark456/pro-tect/master/src/pages/images/"}
 
   - name: "pages"
     label: "Pages"
