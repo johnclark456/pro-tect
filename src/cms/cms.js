@@ -5,8 +5,10 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 // import my homemade widget
 import { CustomPathImageControl, CustomPathImagePreview } from "./customPathImage.js";
 
-CMS.registerPreviewTemplate('pages', AboutPagePreview)
-
+CMS.registerPreviewTemplate('about', AboutPagePreview)
+CMS.registerPreviewTemplate('responsibilities', AboutPagePreview)
+CMS.registerPreviewTemplate('certification', AboutPagePreview)
+CMS.registerPreviewTemplate('keeping-it-safe', AboutPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
 
