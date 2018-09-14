@@ -35,7 +35,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -44,24 +44,34 @@ module.exports = {
               linkImagesToOriginal: false
             },
           },
+          {
+            resolve: 'gatsby-remark-embed-youtube',
+            options: {
+              width: 800,
+              height: 400
+            }
+          },
+          {
+            resolve: 'gatsby-remark-responsive-iframe'
+          }
         ],
       },
     },
     {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
+        pathToConfigModule: 'src/utils/typography.js',
         omitGoogleFont: true,
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`
+      resolve: 'gatsby-plugin-sitemap'
     },
     'gatsby-plugin-netlify-identity-widget',
     'gatsby-plugin-netlify', // make sure to keep it last in the array

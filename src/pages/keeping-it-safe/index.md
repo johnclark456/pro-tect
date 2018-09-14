@@ -35,3 +35,5 @@ Fire Doors are required in almost every building built in the UK according to th
 * The overall fire risk assessment (if applicable) and plan, including escape routes.
 
 It should be noted that beyond regulation specification also drives requirement and insurance companies often place specific fire door requirements on projects.
+
+`youtube:https://www.youtube.com/embed/C_GCDNGwTtw?rel=0`
