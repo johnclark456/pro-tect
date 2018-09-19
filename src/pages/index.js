@@ -17,6 +17,7 @@ import {
 } from "reactstrap";
 import NewsPreviews from "../components/newsPreviews";
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import '../components/links.css'
 config.autoAddCss = false
 
 library.add(faClipboard);
@@ -149,7 +150,7 @@ export default ({ data }) => (
             </Row>
             <Row />
             <hr className="fancy-line"/>
-            <h1 className="text-center">News</h1>
+            <a id="news" name="news" className="offset"/><h1 className="text-center">News</h1>
             {data.blogPages.edges.map(edge => {
               const fullPath = edge.node.fileAbsolutePath
               const data = {

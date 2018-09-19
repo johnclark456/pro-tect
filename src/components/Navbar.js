@@ -61,6 +61,11 @@ export default class ProtectNavbar extends React.Component {
                     </Link>
                   </NavItem>
                   <NavItem>
+                    <Link className="btn-lg nav-link" to="/#news">
+                      <h6>News</h6>
+                    </Link>
+                  </NavItem>
+                  <NavItem>
                     <Link className="btn-lg nav-link" to="/about">
                       <h6>About Us</h6>
                     </Link>
