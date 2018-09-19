@@ -4,7 +4,9 @@ title: >-
   Littlewoods fire: Flames rip through famous building in Liverpool | London
   Evening Standard
 date: 2018-09-19T10:45:37.161Z
-description: Littlewoods fire
+description: >-
+  Littlewoods fire: Flames rip through famous building in Liverpool | London
+  Evening Standard
 tags:
   - Littlewoods
 thumbnail: ../images/littlewoods-fire.jpg
