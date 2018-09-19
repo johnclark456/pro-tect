@@ -1,12 +1,8 @@
 ---
 templateKey: blog-post
-title: >-
-  Littlewoods fire: Flames rip through famous building in Liverpool | London
-  Evening Standard
+title: 'Littlewoods fire: Flames rip through famous building in Liverpool '
 date: 2018-09-19T10:45:37.161Z
-description: >-
-  Littlewoods fire: Flames rip through famous building in Liverpool | London
-  Evening Standard
+description: 'Littlewoods fire: Flames rip through famous building in Liverpool '
 tags:
   - Littlewoods
 thumbnail: ../images/littlewoods-fire.jpg
@@ -46,3 +42,5 @@ Capital & Centric believed about 550 people would be based at the complex when i
 An area measuring 200m by 100m was on fire (PA) 
 
 Liverpool Mayor Joe Anderson tweeted: "Absolutely heartbreaking news that the iconic Littlewoods Building is ablaze, looks pretty bad at this stage, let's hope and pray its salvageable."
+
+Source : London Evening Standard
