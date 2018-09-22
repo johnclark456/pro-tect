@@ -17,9 +17,16 @@ export default class ProtectNavbar extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.close = this.close.bind(this);
     this.state = {
       isOpen: false
     };
+  }
+
+  close() {
+    this.setState({
+      isOpen: false
+    });
   }
   toggle() {
     this.setState({
@@ -61,7 +68,7 @@ export default class ProtectNavbar extends React.Component {
                     </Link>
                   </NavItem>
                   <NavItem>
-                    <Link className="btn-lg nav-link" to="/#news">
+                    <Link className="btn-lg nav-link" to="/#news" onClick={this.close}>
                       <h6>News</h6>
                     </Link>
                   </NavItem>
