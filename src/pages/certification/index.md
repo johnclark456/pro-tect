@@ -20,4 +20,4 @@ There are a few very easy points to be checked as part of the wider survey to ma
 9. Make sure the door is not wedged or propped open
 10. Check that the door is marked correctly with appropriate signage
 
-![FDIS](../images/fdis.jpg)
+![FDIS](/img/fdis.jpg)

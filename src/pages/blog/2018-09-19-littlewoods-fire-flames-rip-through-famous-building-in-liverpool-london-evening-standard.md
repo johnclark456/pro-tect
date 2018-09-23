@@ -5,7 +5,7 @@ date: 2018-09-19T10:45:37.161Z
 description: 'Littlewoods fire: Flames rip through famous building in Liverpool '
 tags:
   - Littlewoods
-thumbnail: ../images/littlewoods-fire.jpg
+thumbnail: /img/littlewoods-fire.jpg
 ---
 At least nine fire crews, supported by firefighters on three combined platform ladders, are tackling the blaze at the iconic 1930s building.
 

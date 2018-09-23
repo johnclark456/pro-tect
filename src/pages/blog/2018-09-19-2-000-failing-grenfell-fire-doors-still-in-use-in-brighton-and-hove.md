@@ -9,7 +9,7 @@ description: >-
   improvements.
 tags:
   - Brighton Fire Doors
-thumbnail: ../images/grenfell.jpg
+thumbnail: /img/grenfell.jpg
 ---
 Brighton and Hove City Council stopped using the Manse Masterdor doors, which are a composite of either wood or metal with a fire-proof core, in 2010 and until last month, they had been replacing them as part of routine improvements.
 
