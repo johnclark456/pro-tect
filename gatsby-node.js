@@ -88,6 +88,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 
   if (node.internal.type === `MarkdownRemark`) {
+    if (frontmatter) {
+      console.log('John: ')
+      console.log(frontmatter)
+    }
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
