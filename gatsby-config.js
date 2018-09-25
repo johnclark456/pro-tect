@@ -27,6 +27,12 @@ module.exports = {
         name: 'staticimages',
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `${__dirname}/static/img/ProfilePicture.png`
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     `gatsby-plugin-sharp`,
