@@ -1,0 +1,7 @@
+.offset:before { 
+ display: block; 
+ content: " "; 
+    height: 120px;      /* Give height of your fixed element */
+        margin-top: -120px; /* Give negative margin of your fixed element */   
+        visibility: hidden; 
+}

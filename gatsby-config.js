@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
-    description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+    title: "Pro-tect Fire Door Services",
+    siteUrl: "https://www.pro-tectltd.co.uk"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -36,9 +35,9 @@ module.exports = {
         name: "images",
       },
     },
-    `gatsby-plugin-image`,
-    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -55,7 +54,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048,
+              maxWidth: 590,
             },
           },
           {
@@ -72,6 +71,9 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap"
     },
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules

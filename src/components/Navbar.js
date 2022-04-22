@@ -1,101 +1,100 @@
 import React from "react";
-import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import {
+  Button,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+} from "reactstrap";
+import { StaticQuery, graphql, Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const Navbar = class extends React.Component {
+import "@fontsource/exo/500.css";
+import "./all.sass";
+
+export default class ProtectNavbar extends React.Component {
   constructor(props) {
     super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.close = this.close.bind(this);
     this.state = {
-      active: false,
-      navBarActiveClass: "",
+      isOpen: false,
     };
   }
 
-  toggleHamburger() {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active",
-            })
-          : this.setState({
-              navBarActiveClass: "",
-            });
-      }
-    );
+  close() {
+    this.setState({
+      isOpen: false,
+    });
   }
-
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    });
+  }
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              role="menuitem"
-              tabIndex={0}
-              onKeyPress={() => this.toggleHamburger()}
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
+      <StaticQuery
+        query={graphql`
+          query logo {
+            logo: file(relativePath: { eq: "Pro-tect_RGB_Transparent.png" }) {
+              childImageSharp {
+                gatsbyImageData(width: 250, placeholder: NONE, layout: FIXED)
+              }
+            }
+          }
+        `}
+        render={(data) => (
+          <div>
+            {/* Expand means when does it convert to the toggle element */}
+            <Navbar color="light" light expand="md" fixed="top">
+              <Link to="/" className="navbar-brand">
+                <GatsbyImage
+                  image={data.logo.childImageSharp.gatsbyImageData}
+                />
+              </Link>
+              <NavbarToggler onClick={this.toggle} />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                  <NavItem>
+                    <Link className="btn-lg nav-link" to="/keeping-it-safe">
+                      <h6>Fire Door Safety</h6>
+                    </Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link className="btn-lg nav-link" to="/certification">
+                      <h6>Certification</h6>
+                    </Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link
+                      className="btn-lg nav-link"
+                      to="/#news"
+                      onClick={this.close}
+                    >
+                      <h6>News</h6>
+                    </Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link className="btn-lg nav-link" to="/about">
+                      <h6>About Us</h6>
+                    </Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/contact-us">
+                      <Button color="danger" size="lg">
+                        <h6>Contact Us</h6>
+                      </Button>
+                    </Link>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+        )}
+      />
     );
   }
-};
-
-export default Navbar;
+}

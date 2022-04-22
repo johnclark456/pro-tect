@@ -8,7 +8,7 @@ export default function FullWidthImage(props) {
     img,
     title,
     subheading,
-    imgPosition = "top left",
+    imgPosition = "center center",
   } = props;
 
   return (
@@ -69,14 +69,14 @@ export default function FullWidthImage(props) {
             {/* Any content here will be centered in the component */}
             {title && (
               <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                className="has-text-weight-bold"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
+                  textShadow: "2px 2px 4px #000000",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25em",
+                  fontSize: "63px",
+                  fontFamily: "Exo",
                 }}
               >
                 {title}
