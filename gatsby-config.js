@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Pro-tect Fire Door Services",
-    siteUrl: "https://www.pro-tectltd.co.uk"
+    siteUrl: "https://www.pro-tectltd.co.uk",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -63,6 +63,13 @@ module.exports = {
               destinationDir: "static",
             },
           },
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400,
+            },
+          },
         ],
       },
     },
@@ -73,7 +80,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-sitemap"
+      resolve: "gatsby-plugin-sitemap",
     },
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
