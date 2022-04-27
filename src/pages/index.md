@@ -2,14 +2,11 @@
 templateKey: index-page
 title: Fire Doors Save Lives
 image: /img/2500x700.png
-subheading: ''
-mainpitch:
-  title: ''
-  description: >
-    Pro-Tect Ltd provide a full and comprehensive fire door
-    surveying service for all new and existing fire door
-    installations.
-description: >-
+mainpitch1: >
+  Pro-Tect Ltd provide a full and comprehensive fire door
+  surveying service for all new and existing fire door
+  installations.  
+mainpitch2: >
   Our aim is to provide customers with the knowledge that the
   environment in which they work, is as safe from the spread of
   fire.

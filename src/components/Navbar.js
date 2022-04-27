@@ -53,6 +53,7 @@ export default class ProtectNavbar extends React.Component {
               <Link to="/" className="navbar-brand">
                 <GatsbyImage
                   image={data.logo.childImageSharp.gatsbyImageData}
+                  alt="Pro-Tect logo"
                 />
               </Link>
               <NavbarToggler onClick={this.toggle} />
