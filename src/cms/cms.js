@@ -5,12 +5,13 @@ import cloudinary from "netlify-cms-media-library-cloudinary";
 import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
-import ResponsibilitiesPagePreview from "./preview-templates/ResponsibilitiesPagePreview";
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerPreviewTemplate("index", IndexPagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
+CMS.registerPreviewTemplate("responsibilities", AboutPagePreview);
+CMS.registerPreviewTemplate("certification", AboutPagePreview);
+CMS.registerPreviewTemplate("keeping-it-safe", AboutPagePreview);
 CMS.registerPreviewTemplate("blog", BlogPostPreview);
-CMS.registerPreviewTemplate("responsibilities", ResponsibilitiesPagePreview);
