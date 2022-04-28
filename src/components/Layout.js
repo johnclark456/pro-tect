@@ -12,7 +12,7 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Pro-tect Fire Door Services" />
     <Navbar />
-    <div style={{ marginTop: "55px" }}>{children}</div>
+    <div>{children}</div>
   </div>
 );
 

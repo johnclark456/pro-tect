@@ -69,7 +69,7 @@ export default function FullWidthImage(props) {
             {/* Any content here will be centered in the component */}
             {title && (
               <h1
-                className="has-text-weight-bold"
+                className="has-text-weight-bold has-text-centered"
                 style={{
                   textShadow: "2px 2px 4px #000000",
                   color: "white",
@@ -84,7 +84,7 @@ export default function FullWidthImage(props) {
             )}
             {subheading && (
               <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                className="has-text-weight-bold has-text-centered is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
                   boxShadow:
                     "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",

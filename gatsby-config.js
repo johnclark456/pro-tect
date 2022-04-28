@@ -74,6 +74,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Pro-Tect",
+        short_name: "Pro-Tect",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#d92d17",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/img/gatsby-icon.png", // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
