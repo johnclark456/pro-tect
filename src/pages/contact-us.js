@@ -55,12 +55,12 @@ export default class Contact extends React.Component {
             onSubmit={this.handleSubmit}
           >
             <noscript>
-              <p>This form won’t work with Javascript disabled</p>
+              <p>This form won&apos;t work with Javascript disabled</p>
             </noscript>
             <input type="hidden" name="form-name" value="contact-us" />
             <p hidden>
               <label>
-                Don’t fill this out:{" "}
+                Don&apos;t fill this out:{" "}
                 <input name="bot-field" onChange={this.handleChange} />
               </label>
             </p>
