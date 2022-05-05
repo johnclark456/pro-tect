@@ -1,6 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby-link";
-import Recaptcha from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import Layout from "../components/Layout";
 import { Container } from "reactstrap";
 
@@ -90,7 +90,7 @@ export default class Contact extends React.Component {
                 onChange={this.handleChange}
               />
             </div>
-            <Recaptcha
+            <ReCAPTCHA
               ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
