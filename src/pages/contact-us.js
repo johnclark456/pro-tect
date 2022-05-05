@@ -4,7 +4,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Layout from "../components/Layout";
 import { Container } from "reactstrap";
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+const RECAPTCHA_KEY = "6LcpNGwUAAAAAPwK9rgBokrTvGUvDVur5faRqdEc";
 
 function encode(data) {
   return Object.keys(data)
