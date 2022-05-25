@@ -68,17 +68,7 @@ export default function FullWidthImage(props) {
           >
             {/* Any content here will be centered in the component */}
             {title && (
-              <h1
-                className="has-text-weight-bold has-text-centered"
-                style={{
-                  textShadow: "2px 2px 4px #000000",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25em",
-                  fontSize: "63px",
-                  fontFamily: "Exo",
-                }}
-              >
+              <h1 className="has-text-weight-bold has-text-centered title-text">
                 {title}
               </h1>
             )}
