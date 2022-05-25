@@ -8,7 +8,7 @@ mainpitch1: >
   installations.  
 mainpitch2: >
   Our aim is to provide customers with the knowledge that the
-  environment in which they work, is as safe from the spread of
+  environment in which they work, is safe from the spread of
   fire.
 intro:
   blurbs:
