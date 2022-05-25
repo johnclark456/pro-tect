@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Fire Doors Save Lives
+title: Be Competent, Be Compliant, Inspect now
 image: /img/2500x700.png
 mainpitch1: >
   Pro-Tect Ltd provide a full and comprehensive fire door surveying service for
