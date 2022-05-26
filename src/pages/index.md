@@ -12,14 +12,9 @@ intro:
     - image: /img/burning-fire.png
       heading: What are your responsiblities?
       text: >
-        Office environments are changing. Who is responsible for the safety and
-        wellbeing of the souls within a particular demise. That might be you.
-        Under the Regulatory Reform Fire Safety Order (2005) the responsibility
-        for maintaining fire safety in non-domestic buildings falls to the
-        Responsible Person. In an enquiry, they will look to the responsible
-        person in charge. That might be the landlord, the building manager, the
-        company owner, the office manager, the facilities manger and so on. If
-        you are…
+        Office environments are changing. 
+
+        Under the Regulatory Reform Fire Safety Order (2005) the responsibility for maintaining fire safety in non-domestic buildings falls to the Responsible Person. In an enquiry, they will look to the responsible person in charge. That might be the landlord, the building manager, the company owner, the office manager, the facilities manger and so on. If you are…
       slug: /responsibilities
     - image: /img/clipboard.png
       heading: Keeping it safe
